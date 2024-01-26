@@ -5,7 +5,7 @@
     "start_url": "/https://gtwy-pwa-app.netlify.app/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#317EFB",
+    "theme_color": "#ffffff",
     "icons": [
         {
             "src": "/icon.png",
