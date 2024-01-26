@@ -8,9 +8,10 @@
     "theme_color": "#317EFB",
     "icons": [
         {
-            "src": "/icon512.png",
+            "src": "/maskable_icon.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ]
 }
