@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PWA</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="changeBackgroundColor()">Hello PWA!</button>
+
+    <script src="/main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker зарегистрирован с областью видимости:', registration);
+                })
+                .catch((error) => {
+                    console.log('Ошибка регистрации Service Worker:', error);
+                });
+        }
+    </script>
+</body>
+</html>
