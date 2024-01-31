@@ -7,6 +7,7 @@ self.addEventListener('install', (event) => {
                 '/index.html',
                 '/manifest.json',
                 '/icon.png',
+                '/maskable-icon.png'
                 // Add other files you want to cache
             ]);
         })
